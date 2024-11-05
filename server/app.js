@@ -26,9 +26,9 @@ app.use(express.json());
 //connect mongodb
 connectDB();
 //default route
-app.get("/",(req,res)=>(
+app.get("/",(req,res)=>{
   res.json("Weclome to dddUnviersity")
-  );
+});
 //routes
 const userRoutes = require("./routes/User");
 app.use("/user", userRoutes);
